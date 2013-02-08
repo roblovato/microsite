@@ -1,0 +1,355 @@
+body  {
+	font: 14px Arial, Helvetica, sans-serif;
+	line-height: 20px;
+	margin: 0;
+	padding: 0;
+	color: #5e6d75;
+	background: url(images/film1.png) 0 150px repeat-x #dbdbdb;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+body.portfolio {background: url(images/film1.png) -1000px 150px repeat-x #dbdbdb;}
+body.about {background: url(images/film1.png) -2000px 150px repeat-x #dbdbdb;}
+body.contact {background: url(images/film1.png) -3000px 150px repeat-x #dbdbdb;}
+
+html, body {
+	height: 100%;
+}
+
+.clear, br {clear: both;}
+
+a:focus {outline-style: none;}
+a img {border: none;}
+
+a,
+#thumbs a span,
+input[type="submit"],
+#facebook, #twitter {
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+a:link{color: #ed1e24; text-decoration: none;}
+a:visited{color: #ed1e24; text-decoration: none;}
+a:hover{color: #000; text-decoration: underline;}
+
+h1, h2, h3 {
+	font-size: 25px;
+	margin-top: 0;
+	font-family: 'Signika', "Lucida Grande", Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	line-height: 30px;
+	color: #ed1e24;
+}
+
+h3 {font-size: 22px; color: #666;}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	float: right;
+	margin: 0 0 20px 40px;
+	border: 10px solid #fff;
+	box-shadow: 0 0 10px 5px #666;
+}
+
+/*===================== STRUCTURE =====================*/
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -140px auto;
+	background: url(images/film3.png) -500px top repeat-x;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+body.portfolio #wrapper {background: url(images/film3.png) 500px top repeat-x;}
+body.about #wrapper {background: url(images/film3.png) 1000px top repeat-x;}
+body.contact #wrapper {background: url(images/film3.png) 1500px top repeat-x;}
+
+#container {
+	width: 990px;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+/*===================== HEADER =====================*/
+
+#logo {
+	width: 405px;
+	height: 187px;
+	margin: 0 auto 10px auto;
+	background: url(images/airbrown_logo.png) center top no-repeat;
+}
+
+#nav {
+	text-align: center;
+}
+
+#nav a, input[type="submit"] {
+	display: inline-block;
+	padding: 5px 15px;
+	margin: 0 10px;
+	border-radius: 5px;
+	color: #7d7d7d;
+	background: url(images/button_overlay.png) center top repeat-x #666;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 0 0 2px #666, 0 0 5px 5px #666;
+	color: #dadada;
+/*	font-size: 14px;*/
+}
+
+#nav a:hover, #nav a.selected, input[type="submit"]:hover {
+	text-decoration: none;
+	background-position: center -35px;
+}
+
+#nav a.selected {
+	background: #ed1e24;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 0 0 2px #ed1e24, 0 0 5px 5px #666;
+	color: #fff;
+}
+
+
+/*===================== CONTENT =====================*/
+
+.content {
+	position: absolute;
+	top: 300px;
+}
+
+#portfolio_content, #about_content, #contact_content {
+	display: none;
+}
+
+#contact_left {
+	width: 200px;
+	float: left;
+	margin-right: 30px;
+}
+
+#contact_right {
+	width: 200px;
+	float: left;
+}
+
+#contact_form {
+	width: 440px;
+}
+
+input[type="text"], textarea {
+	border: 1px solid #ED1E24;
+    border-radius: 3px 3px 3px 3px;
+    color: #5E6D75;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 3px;
+}
+
+input[type="submit"] {
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+	input[type="submit"]:hover {cursor: pointer;}
+
+#comment {
+	width: 420px;
+	height: 130px;
+	resize: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+label.error {
+	float: left;
+	margin-top: -10px;
+	color: #ED1E24;
+	font-size: 11px;
+}
+
+/*===================== PORTFOLIO =====================*/
+
+#thumbs {
+	margin-top: 40px;
+	text-align: center;
+}
+
+#thumbs a {
+	position: relative;
+	display: inline-block;
+	width: 230px;
+	height: 130px;
+	margin: 0 20px 40px 20px;
+	/*border: 1px solid #d20636;*/
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7), 0 0 0 2px #666, 0 0 5px 5px #666;
+}
+
+	#thumbs a span {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border-radius: 5px;
+		background: #000;
+		opacity: .5;
+	}
+
+	#thumbs a:hover span {opacity: 0;}
+
+	#thumbs em {
+		display: block;
+		height: 25px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border-radius: 0 0 5px 5px;
+		background: url(images/overlay.png);
+		background: rgba(0, 0, 0, .7);
+		color: #fff;
+		line-height: 24px;
+		text-align: center;
+		font-style: normal;
+		font-size: 11px;
+	}
+
+#thumb_spring12_fashion {background: url(images/thumb_spring12_fashion.jpg) 0 0 no-repeat;}
+#thumb_exotic_car {background: url(images/thumb_exotic_car.jpg) 0 0 no-repeat;}
+#thumb_david_louis {background: url(images/thumb_david_louis.jpg) 0 0 no-repeat;}
+#thumb_amazing_grace {background: url(images/thumb_amazing_grace.jpg) 0 0 no-repeat;}
+#thumb_anchorman {background: url(images/thumb_anchorman.jpg) 0 0 no-repeat;}
+#thumb_after_five {background: url(images/thumb_after_five.jpg) 0 0 no-repeat;}
+#thumb_sunday_funday {background: url(images/thumb_sunday_funday.jpg) 0 0 no-repeat;}
+#thumb_electric_jolt {background: url(images/thumb_electric_jolt.jpg) 0 0 no-repeat;}
+#thumb_unlv_grad {background: url(images/thumb_unlv_grad.jpg) 0 0 no-repeat;}
+#thumb_reebok {background: url(images/thumb_reebok.jpg) 0 0 no-repeat;}
+#thumb_broken {background: url(images/thumb_broken.jpg) 0 0 no-repeat;}
+#thumb_shave {background: url(images/thumb_shave.jpg) 0 0 no-repeat;}
+#thumb_morph_school {background: url(images/thumb_morph_school.jpg) 0 0 no-repeat;}
+#thumb_motion {background: url(images/thumb_motion.jpg) 0 0 no-repeat;}
+#thumb_champ {background: url(images/thumb_champ.jpg) 0 0 no-repeat;}
+
+/*===================== MODAL =====================*/
+
+#overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background: url(http://static.fanbridge.com/images/overlay.png);*/
+	background: rgba(0, 0, 0, .7);
+	z-index: 20000;
+}
+
+#modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	background: #fff;
+	z-index: 30000;
+}
+
+#modal_content {
+	width: 855px;
+	position: relative;
+	margin: 20px;
+	font-size: 14px;
+	color: #000;
+}
+
+	#modal_content h2 {
+		margin-bottom: 10px;
+		color: #000;
+		font-size: 30px;
+	}
+
+#close {
+	display: block;
+	width: 42px;
+	height: 42px;
+	background: url(images/modal_close.png) 0 0 no-repeat;
+	position: absolute;
+	right: -20px;
+	top: -18px;
+	z-index: 31000;
+}
+
+.modal_content,
+#thankyou {display: none;}
+
+/*===================== FOOTER =====================*/
+
+#footer {
+	height: 140px;
+	clear: both;
+	position: relative;
+	background: url(images/film_straight.png) top repeat-x;
+	text-align: center;
+}
+
+#footer_content {
+	width: 990px;
+	height: 110px;
+	left: 50%;
+	top: 50%;
+	margin-left: -495px;
+	margin-top: -70px;
+	padding-top: 30px;
+	position: absolute;
+}
+
+	#footer_content span {
+		display: inline-block;
+		position: relative;
+		top: -16px;
+	}
+
+#facebook, #twitter {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	opacity: .5;
+}
+
+	#facebook:hover, #twitter:hover {opacity: 1;}
+
+	#facebook {background: url(images/facebook.png) 0 0 no-repeat;}
+	#twitter {background: url(images/twitter.png) 0 0 no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
