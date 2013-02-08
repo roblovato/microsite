@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 	
 	//Page height
 	var content_height = ($('#home_content').outerHeight()) + 430;
